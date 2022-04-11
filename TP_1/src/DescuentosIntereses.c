@@ -4,7 +4,6 @@
  *  Created on: 8 abr. 2022
  *      Author: W7
  */
-#include <stdio.h>
 float descuento (float numero, float precio)
 {
 	float descuento;
