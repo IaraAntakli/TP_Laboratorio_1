@@ -41,7 +41,64 @@ int ingresoDeDatos (char*mensaje, int dato)
 	}
 	return dato;
 }
+/**
+ * @param precio de aerolinea
+ * @param descuento porcentaje que se descuenta del precio
+ * @return el total
+ */
+float descuentos (float precio, int descuento)
+{
+	float total;
+	descuento = precio*descuento/100;
+	total = precio - descuento;
+	return total;
+}
+/**
+ * @param precio de aerolinea
+ * @param interes: porcentaje que se agrega al precio
+ * @return el total
+ */
+float interes (float precio, int interes)
+{
+	float total;
+	interes = precio*interes/100;
+	total = precio + interes;
+	return total;
+}
+/**
+ * @param precio de aerolinea
+ * @param valor de bitcoin por el que se divide el precio
+ * @return total
+ */
+float vueloBitcoin (float precio, float valor)
+{
+	float total;
+	total = precio / valor;
+	return total;
 
+}
+/**
+ * @param precio de aerolinea
+ * @param kilometros del viaje por el que se divide el precio
+ * @return total
+ */
+float unitarioKm (float precio, int kilometros)
+{
+	float total;
+	total = precio / kilometros;
+	return total;
+}
+/**
+ * @param precioUno (precio de aerolinea)
+ * @param precioDos(segundo precio de aerolinea) que se resta al primero
+ * @return total
+ */
+float diferenciaPrecios (float precioUno, float precioDos)
+{
+	float total;
+	total = precioUno - precioDos;
+	return total;
+}
 /**
  * int kilometros: cantidad de kmt
  * float precio: uno es valor de Latam y otro de Aerolineas Argentinas

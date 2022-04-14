@@ -10,6 +10,11 @@
 
 int mostrarMenu (int opcion);
 int ingresoDeDatos (char*mensaje, int dato);
+float descuentos (float precio, int descuento);
+float interes (float precio, int interes);
+float vueloBitcoin (float precio, float valor);
+float unitarioKm (float precio, int kilometros);
+float diferenciaPrecios (float precioUno, float precioDos);
 void cargaForzada ();
 
 #endif /* FUNCIONESTP_H_ */
