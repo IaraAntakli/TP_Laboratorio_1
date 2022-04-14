@@ -43,6 +43,8 @@ int main(void)
 				diferencia = precioAerolineasArgentinas-precioLatam;
 			break;
 			case 4:
+				printf("Kilometros ingresados: %d", kilometros);
+				printf("\n");
 				printf("\nPrecio Aerolineas Argentinas: $%.2f ", precioAerolineasArgentinas);
 				printf("\na) Precio con tarjeta de débito: $%.2f", debito1);
 				printf("\nb) Precio con tarjeta de crédito: $%.2f", credito1);
